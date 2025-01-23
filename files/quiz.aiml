@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	
+	<category>
+	    <pattern>QUIZ</pattern>
+	    <template>
+	        I'll need some information about you. Do you prefer working with 
+	        computer software or hardware?
+	        <button>
+	            <text>Software</text>
+	            <postback>SOFTWARE</postback>
+	        </button>
+	        <button>
+	            <text>Hardware</text>
+	            <postback>HARDWARE</postback>
+	        </button>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>SOFTWARE</pattern>
+	    <template>
+	        Great! Which of these describes your interests more?
+	        <button>
+	            <text>I like to help users solve their computer problems.</text>
+	            <postback>TECH SUPPORT</postback>
+	        </button>
+	        <button>
+	            <text>I like to build networks.</text>
+	            <postback>NETWORK ENGINEER</postback>
+	        </button>
+	   </template>
+    </category>
+    
+    <category>
+        <pattern>HARDWARE</pattern>
+        <template>
+            Great. Which of these most describes your interests?
+            <button>
+                <text>I like to design software applications.</text>
+                <postback>SOFTWARE DEVELOPER</postback>
+            </button>
+            <button>
+                <text>I like to build websites.</text>
+                <postback>WEB DEVELOPER</postback>
+            </button>
+            <button>
+                <text>I like to protect data from security threats.</text>
+                <postback>CYBERSECURITY ANALYST</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>TECH SUPPORT</pattern>
+        <template>
+            It looks like you may be interested in Tech Support! Would you like
+            to try again?
+            <button>
+                <text>Yes</text>
+                <postback>QUIZ</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>EXIT</postback>
+            </button>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>NETWORK ENGINEER</pattern>
+	    <template>
+	        It looks like you may be interested in Network Engineering! Would
+	        you like to try again?
+	        <button>
+                <text>Yes</text>
+                <postback>QUIZ</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>EXIT</postback>
+            </button>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>SOFTWARE DEVELOPER</pattern>
+	    <template>
+	        It looks like you may be interested in being a Software Developer!
+	        Would you like to try again?
+	        <button>
+                <text>Yes</text>
+                <postback>QUIZ</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>EXIT</postback>
+            </button>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>WEB DEVELOPER</pattern>
+	    <template>
+	        It looks like you may be interested in being a Web Developer! Would
+	        you like to try again?
+	        <button>
+                <text>Yes</text>
+                <postback>QUIZ</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>EXIT</postback>
+            </button>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>CYBERSECURITY ANALYST</pattern>
+	    <template>
+	        It looks like you may be interested in being a Cybersecurity Analyst!
+	        Would you like to try again?
+	        <button>
+                <text>Yes</text>
+                <postback>QUIZ</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>EXIT</postback>
+            </button>
+	    </template>
+    </category>
+	
+	
+</aiml>

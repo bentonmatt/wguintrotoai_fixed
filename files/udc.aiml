@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+  <category>
+      <pattern>*</pattern>
+      <template>
+          I'm not sure how to answer that. Type "Hello" to start.
+      </template>
+  </category>
+  
+  <category>
+      <pattern>HELLO</pattern>
+      <template>
+          Hello! I'm your career advisory chatbot. 
+          Would you like help selecting a career?
+          <button>
+              <text>Yes</text>
+              <postback>QUIZ</postback>
+          </button>
+          <button>
+              <text>No</text>
+              <postback>EXIT</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>EXIT</pattern>
+      <template>
+          Exiting. If you want to try again, please type "Hello".
+      </template>
+  </category>
+  
+</aiml>
